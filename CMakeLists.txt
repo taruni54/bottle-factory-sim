@@ -1,0 +1,1 @@
+cmake_minimum_required(VERSION 3.5)\n\nproject(bottle_factory_sim)\n\n# Find dependencies\nfind_package(ament_cmake REQUIRED)\nfind_package(rclcpp REQUIRED)\nfind_package(std_msgs REQUIRED)\n\n# Install Python scripts\ninstall(PROGRAMS\n  scripts/my_script.py\n  DESTINATION lib/${PROJECT_NAME}\n)\n\n# Include CMake modules\nament_package()\n
