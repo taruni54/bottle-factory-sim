@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>bottle_factory_sim</name>
+  <version>0.1.0</version>
+  <description>Real-time digital twin of a bottle production line with bottleneck detection in ROS2 and Gazebo</description>
+  <maintainer email="taruni54@github.com">taruni54</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  
+  <depend>rclcpp</depend>
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_msgs</depend>
+  <depend>tf2</depend>
+  <depend>sensor_msgs</depend>
+
+  <exec_depend>ros2launch</exec_depend>
+  <exec_depend>gazebo</exec_depend>
+  <exec_depend>gazebo_ros2_control</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
